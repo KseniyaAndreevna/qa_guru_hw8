@@ -55,7 +55,7 @@ public class CalculatorTests {
     @ParameterizedTest(name = "Testing of calculate rectangle area with data {0}, {1}, {2}")
     void testCalculateAreaRectangle(int a, int b, int expectedResult) {
         double result = (a * b);
-        System.out.println("Площадь треугольника со сторонами " + a + " и " + b  + " = " + result);
+        System.out.println("Площадь прямоугольника со сторонами " + a + " и " + b  + " = " + result);
         assertThat(result).isEqualTo(expectedResult);
     }
 
