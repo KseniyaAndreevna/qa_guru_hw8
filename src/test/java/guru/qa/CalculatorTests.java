@@ -47,6 +47,19 @@ public class CalculatorTests {
         assertThat(result).isEqualTo(expectedResult);
     }
 
+
+    @CsvSource(value = {
+            "1, 2, 2",
+            "25, 16, 400"
+    })
+    @ParameterizedTest(name = "Testing of calculate rectangle area with data {0}, {1}, {2}")
+    void testCalculateAreaRectangle(int a, int b, int expectedResult) {
+        double result = (a * b);
+        System.out.println("Площадь треугольника со сторонами " + a + " и " + b  + " = " + result);
+        assertThat(result).isEqualTo(expectedResult);
+    }
+
+
     static Stream<Arguments> calculatorTestDataProvider() {
         return Stream.of(
                 Arguments.of(1, 2, '+', 3),
