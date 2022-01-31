@@ -53,6 +53,7 @@ public class CalculatorTests {
                 Arguments.of(-0.8, -1, '*', 0.8)
         );
     }
+
     @MethodSource("calculatorTestDataProvider")
     @ParameterizedTest(name = "Testing of calculator with data {0}, {1}, {2}, {3}")
     void testCalculatorWithMethodDataProvider(double a, double b, char operation, double expectedResult) {
