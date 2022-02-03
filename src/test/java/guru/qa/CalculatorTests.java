@@ -13,6 +13,7 @@ import static guru.qa.Calculator.calculate;
 import static guru.qa.Calculator.isEvenNumber;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
+@Tag("simple")
 public class CalculatorTests {
 
     @BeforeAll
